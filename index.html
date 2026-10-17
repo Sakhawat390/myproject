@@ -1,142 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <!-- Meta -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sakhawat's Gallery</title>
-
-  <!-- Google Font -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6fb">
+  <meta name="description" content="Md. Sakhawat Hossain Simanto builds thoughtful AI automations and polished web experiences from Habiganj, Bangladesh.">
+  <title>Simanto — AI automation &amp; web</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+  <div class="page-glow glow-one" aria-hidden="true"></div>
+  <div class="page-glow glow-two" aria-hidden="true"></div>
+  <header class="topbar wrap">
+    <a class="brand" href="#home" aria-label="Simanto home"><span class="brand-mark">S.</span><span>SIMANTO<span class="brand-dot">/</span>LAB</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="availability" href="mailto:shakawatshimanto@gmail.com"><span class="status-dot"></span>Open to junior internships</a>
+  </header>
 
-  <!-- FIXED PROFILE IMAGE -->
-  <div class="profile-pic">
-    <!-- Replace with your profile -->
-    <img src="/Images/IMG_20260125_160925.jpg" alt="Sakhawat Profile">
-  </div>
-
-  <!-- HERO SECTION -->
-  <section class="hero" id="top">
-
-    <!-- Three.js Background Canvas -->
-    <canvas id="three-canvas"></canvas>
-
-    <!-- Dark Overlay -->
-    <div class="overlay"></div>
-
-    <!-- Hero Content -->
-    <div class="hero-content">
-
-      <h1 class="hero-title">Sakhawat's Gallery</h1>
-
-      <div class="hero-roles">
-        <p>I'm a <span class="role active">web developer</span></p>
-        <p>digital marketer</p>
-        <p>meta ads runner</p>
-        <p>web designer</p>
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> AI AUTOMATION <span>·</span> FRONTEND</p>
+        <h1>Make the busywork<br>move <span class="accent-word">itself.</span></h1>
+        <p class="intro">I’m <strong>Md. Sakhawat Hossain Simanto</strong> — an automation developer and frontend builder in Habiganj, Bangladesh. I turn useful ideas into clear, friendly digital experiences.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#work">Explore selected work <span aria-hidden="true">↘</span></a><a class="button button-quiet" href="mailto:shakawatshimanto@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-meta"><span>HABIGANJ, BANGLADESH</span><span class="meta-separator"></span><span>HSC BATCH 2028</span></div>
       </div>
-
-      <p class="hero-year">working since <span>2024</span></p>
-
-      <a href="#gallery" class="btn">View Gallery</a>
-    </div>
-  </section>
-
-
-  <!-- GALLERY SECTION -->
-  <section class="gallery-section" id="gallery">
-
-    <h2 class="section-title">My Works</h2>
-
-    <div class="gallery-grid">
-
-      <!-- CARD 1 -->
-      <div class="work-card">
-        <img src="https://picsum.photos/500/350?random=1" alt="">
-        <div class="work-info">
-          <h3>TechCorp Website</h3>
-          <p>Responsive corporate site with CMS.</p>
-          <span class="tag">React</span>
-        </div>
+      <div class="hero-art" aria-label="Illustration of an automation workflow">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="art-caption"><span class="status-dot"></span> SYSTEMS IN PROGRESS</div>
+        <div class="flow-card flow-trigger"><span class="node-icon icon-hook">↗</span><span><b>New message</b><small>WhatsApp trigger</small></span><i>01</i></div>
+        <div class="flow-line line-one"></div>
+        <div class="flow-card flow-agent"><span class="node-icon icon-ai">✳</span><span><b>AI agent</b><small>Understand intent</small></span><i>02</i></div>
+        <div class="flow-line line-two"></div>
+        <div class="flow-card flow-action"><span class="node-icon icon-sheet">▤</span><span><b>Take action</b><small>Save · notify · reply</small></span><i>03</i></div>
+        <div class="signal signal-one"></div><div class="signal signal-two"></div>
+        <div class="art-foot"><span>IDEA</span><span class="art-foot-track"><i></i></span><span>OUTCOME</span></div>
+        <div class="floating-chip chip-top">n8n <span>workflow</span></div>
+        <div class="floating-chip chip-bottom"><span class="sparkle">✦</span> Less busywork, more momentum</div>
       </div>
+      <a href="#work" class="scroll-cue" aria-label="Scroll to selected work"><span class="scroll-bar"></span> SCROLL TO EXPLORE</a>
+    </section>
 
-      <!-- CARD 2 -->
-      <div class="work-card">
-        <img src="https://picsum.photos/500/350?random=2" alt="">
-        <div class="work-info">
-          <h3>Fashion Brand Campaign</h3>
-          <p>Meta ads driving 200% ROAS.</p>
-          <span class="tag">Meta Ads</span>
-        </div>
+    <section class="intro-strip wrap" aria-label="Focus areas">
+      <p>Curious by default.<br><strong>Useful by design.</strong></p>
+      <div class="strip-item"><span class="strip-number">01</span><span>AI &amp; workflow<br>automation</span></div>
+      <div class="strip-item"><span class="strip-number">02</span><span>Responsive<br>frontend design</span></div>
+      <div class="strip-item"><span class="strip-number">03</span><span>Full-stack<br>learning journey</span></div>
+    </section>
+
+    <section class="work-section wrap section-space" id="work">
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> A FEW THINGS I’VE BUILT</p><h2>Selected <span class="accent-word">work.</span></h2></div><p class="section-note">Small projects, real learning.<br>Each one moves me forward.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-feature" data-reveal>
+          <a class="project-visual visual-automation" href="https://github.com/Sakhawat390" target="_blank" rel="noreferrer" aria-label="View Simanto's GitHub projects">
+            <div class="visual-top"><span>WORKFLOW STUDIES</span><span class="visual-live"><i></i> BUILT WITH N8N</span></div>
+            <div class="mini-flow">
+              <div class="mini-node"><span class="mini-icon mini-webhook">↗</span><b>Incoming lead</b><small>Form trigger</small></div><span class="mini-connector"></span>
+              <div class="mini-node mini-node-ai"><span class="mini-icon mini-brain">✳</span><b>AI qualification</b><small>Score &amp; route</small></div><span class="mini-connector"></span>
+              <div class="mini-node"><span class="mini-icon mini-mail">✉</span><b>Follow-up</b><small>Notify the team</small></div>
+            </div>
+            <div class="visual-bottom"><span>INPUT</span><span class="visual-dash"></span><span>SMART ACTIONS</span></div>
+          </a>
+          <div class="project-info"><div class="project-title"><span class="project-index">01 / AUTOMATION</span><a href="https://github.com/Sakhawat390" target="_blank" rel="noreferrer" aria-label="Open GitHub profile">↗</a></div><h3>AI workflows that<br>do the follow-through.</h3><p>Six completed n8n automation projects, including a WhatsApp chat bot and AI lead qualification workflow. Built to connect useful tools and reduce repetitive steps.</p><div class="tag-row"><span>n8n</span><span>AI agents</span><span>Workflow design</span></div></div>
+        </article>
+        <article class="project-card" data-reveal>
+          <a class="project-visual visual-tech" href="https://github.com/Sakhawat390/techzone" target="_blank" rel="noreferrer" aria-label="View the Techzone project on GitHub">
+            <div class="tech-window"><div class="window-bar"><span></span><span></span><span></span><b>techzone / storefront</b></div><div class="tech-layout"><div class="tech-sidebar"><i></i><i></i><i></i><i></i></div><div class="tech-main"><div class="tech-nav"><b>techzone</b><span>Discover&nbsp;&nbsp; Products&nbsp;&nbsp; About</span><i>⌕</i></div><div class="tech-copy"><small>TECH FOR EVERY DAY</small><strong>Find your<br>next favorite.</strong><span class="tech-button">Explore products&nbsp; →</span></div><div class="tech-product"><div class="product-orb"></div><span>01 / COLLECTION</span><b>Designed to explore</b></div></div></div></div>
+          </a>
+          <div class="project-info"><div class="project-title"><span class="project-index">02 / WEB BUILD</span><a href="https://github.com/Sakhawat390/techzone" target="_blank" rel="noreferrer" aria-label="Open Techzone on GitHub">↗</a></div><h3>Techzone</h3><p>A self-directed full-stack website experiment, built to stretch my frontend skills and learn how the pieces of a complete web project fit together.</p><div class="tag-row"><span>TypeScript</span><span>Frontend</span><span>Learning build</span></div></div>
+        </article>
+        <article class="project-card project-note-card" data-reveal>
+          <div class="note-visual"><div class="note-mark">S<span>.</span></div><div class="note-rings"></div><div class="note-coordinates">24°22′N<br>91°25′E</div><p>BUILD<br><strong>IN PUBLIC</strong></p><span class="note-footer">HABIGANJ · BANGLADESH</span></div>
+          <div class="project-info"><div class="project-title"><span class="project-index">03 / PERSONAL SITE</span><a href="https://sakhawathossainsimanto.vercel.app" target="_blank" rel="noreferrer" aria-label="Visit Simanto's portfolio">↗</a></div><h3>A home for my<br>work and progress.</h3><p>My portfolio brings together automation projects, web experiments, and the next things I’m learning.</p><div class="tag-row"><span>Portfolio</span><span>Responsive design</span><span>In progress</span></div></div>
+        </article>
       </div>
+      <a class="text-link all-work" href="https://github.com/Sakhawat390" target="_blank" rel="noreferrer">More experiments on GitHub <span>↗</span></a>
+    </section>
 
-      <!-- CARD 3 -->
-      <div class="work-card">
-        <img src="https://picsum.photos/500/350?random=3" alt="">
-        <div class="work-info">
-          <h3>Creative Ad Set</h3>
-          <p>Video + static ads for Instagram.</p>
-          <span class="tag">Marketing</span>
-        </div>
-      </div>
+    <section class="about-section section-space" id="about"><div class="wrap about-layout"><div><p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE ABOUT ME</p><h2>Learning out loud.<br><span class="accent-word">Building with care.</span></h2></div><div class="about-copy"><p>I’m a student at Brindaban Govt College, currently specializing in n8n AI automation development. I’ve spent about two years practicing frontend development and enjoy shaping clear, creative interfaces.</p><p>Right now, I’m expanding into backend and full-stack development, using AI-assisted coding to move quickly while learning how the work fits together.</p><div class="skill-list"><span>n8n automation</span><span>JavaScript</span><span>Frontend design</span><span>Responsive UI</span><span>AI-assisted development</span><span>Learning backend</span></div></div></div></section>
 
-      <!-- CARD 4 -->
-      <div class="work-card">
-        <img src="https://picsum.photos/500/350?random=4" alt="">
-        <div class="work-info">
-          <h3>Personal Portfolio</h3>
-          <p>Custom design for a photographer.</p>
-          <span class="tag">UI/UX</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- FOOTER -->
-  <footer class="footer"
-    style="background: url('images/background.jpg') center/cover no-repeat;">
-
-    <div class="footer-overlay"></div>
-
-    <div class="footer-content">
-
-      <h2>Sakhawat's Gallery</h2>
-
-      <div class="social-links">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-
-      <p>© 2024 Sakhawat. All rights reserved.</p>
-
-      <a href="#top" class="back-top">⬆ Back to Top</a>
-    </div>
-  </footer>
-
-
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-  <!-- Three.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
-  <!-- JS -->
-  <script src="script.js"></script>
+    <section class="contact-section wrap section-space" id="contact"><div class="contact-panel"><div class="contact-orb" aria-hidden="true"></div><div class="contact-content"><p class="eyebrow"><span class="eyebrow-line"></span> HAVE A GOOD PROJECT IN MIND?</p><h2>Let’s make<br>something <span class="accent-word">useful.</span></h2><p>I’m looking for a junior internship where I can contribute, learn from a team, and keep building.</p><div class="contact-links"><a class="button button-primary" href="mailto:shakawatshimanto@gmail.com">Email me <span>↗</span></a><a class="button button-light" href="https://wa.me/8801911924693" target="_blank" rel="noreferrer">WhatsApp <span>↗</span></a></div></div><div class="contact-aside"><span>BASED IN</span><strong>Habiganj, Bangladesh</strong><span>FIND ME ONLINE</span><a href="https://github.com/Sakhawat390" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/search/results/all/?keywords=Sakhawat%20Hossain%20Simanto" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#home"><span class="brand-mark">S.</span><span>SIMANTO<span class="brand-dot">/</span>LAB</span></a><span>Made with curiosity in Habiganj.</span><a href="#home">BACK TO TOP ↑</a></footer>
 </body>
 </html>
